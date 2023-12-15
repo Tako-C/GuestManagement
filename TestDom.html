@@ -1,0 +1,28 @@
+<html>
+    <body>
+        
+    
+    <div class="movie">
+        <p>Tako</p>
+        <p>Yaki</p>
+        <p>Nami</p>
+    </div>
+    <script>
+        let div_p = document.getElementsByClassName("movie")[0]
+        let div_c = document.createElement("div")
+        // div_c.textContent = " "
+        div_p.appendChild(div_c)
+        // div_p.textContent = "UU"
+
+        console.log(div_p.children)
+        console.log(div_p.childNodes)
+
+        let p = document.getElementsByTagName("p")[0]
+        let p2 = document.createElement("p")
+        p2.textContent = "Hello"
+        div_p.appendChild(p2)
+
+        console.log(p)
+    </script>
+    </body>
+</html>
